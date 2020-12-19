@@ -13,3 +13,31 @@ console.log("\n UC 11C PartWorkingDayStrings : " +partWorkingDayStrArr);
 let nonWorkingDayNums = empDailyHrsAndWageArr.filter(dailyHrsAndWage => dailyHrsAndWage.dailyHours == 0).map(dailyHrsAndWage =>dailyHrsAndWage.dayNum);
 
 console.log("NonWorkingDayNums : " +nonWorkingDayNums);
+
+
+//Employee payroll class
+class EmployeePayrollData {
+//property
+id;
+salary;
+
+//construtor
+constructor(id , name, salary) v{
+ this.id=id;
+ this.name=name;
+ this.salary=saalry;
+}
+
+//getter and setter method
+get name() { return this._name;}
+set name(name) {this._name = name; }
+
+//method
+toString() {
+ return "id=" +this.id + "name=" +this.name + "salary=" +this.salary;
+}
+}
+let employeePayrollDATA = new EmployeePayrollData(),"Aanchal",50000);
+console.log(employeePayrollData.toString());
+employeePayrollData.name="john";
+console.log(employeePayrollData.toString());
